@@ -1,4 +1,4 @@
-package tech.powerjob.samples.processors;
+package com.modyy.powerjob.processors;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -10,14 +10,11 @@ import tech.powerjob.worker.log.OmsLogger;
 import java.util.Collections;
 
 /**
- * 单机处理器 示例
- *
- * @author tjq
- * @since 2020/4/17
+ * 
  */
 @Slf4j
 @Component
-public class DataXProcessor implements BasicProcessor {
+public class KettleProcessor implements BasicProcessor {
 
     @Override
     public ProcessResult process(TaskContext context) throws Exception {

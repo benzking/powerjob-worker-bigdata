@@ -31,6 +31,8 @@
         <fastjson.version>1.2.68</fastjson.version>
         <powerjob.official.processors.version>1.1.0</powerjob.official.processors.version>
         <lombok.version>1.18.12</lombok.version>
+
+        <pdi.version>9.2.0.0-SNAPSHOT</pdi.version>
     </properties>
 
     <dependencies>
@@ -72,6 +74,24 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+
+        <!--pentaho-kettle-->
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle-core</artifactId>
+            <version>${pdi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle-engine</artifactId>
+            <version>${pdi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.pentaho.di.plugins</groupId>
+            <artifactId>pdi-core-plugins-impl</artifactId>
+            <version>${pdi.version}</version>
+        </dependency>
+
     </dependencies>
 
 
