@@ -1,25 +1,12 @@
-package com.modyy.datax.service;
+package com.github.modyy.datax.service;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.spi.ErrorCode;
-import com.alibaba.datax.common.util.StrUtil;
 import com.alibaba.datax.core.Engine;
-import com.alibaba.datax.core.util.ExceptionTracker;
-import com.alibaba.datax.core.util.FrameworkErrorCode;
-import com.alibaba.datax.core.util.container.CoreConstant;
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
 import java.time.LocalTime;
-import java.util.List;
 
 @Service
 public class DataSyncServiceImpl implements DataSyncService {

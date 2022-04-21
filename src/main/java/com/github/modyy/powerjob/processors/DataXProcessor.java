@@ -1,4 +1,4 @@
-package com.modyy.powerjob.processors;
+package com.github.modyy.powerjob.processors;
 
 import com.alibaba.datax.common.exception.DataXException;
 import com.alibaba.datax.common.util.StrUtil;

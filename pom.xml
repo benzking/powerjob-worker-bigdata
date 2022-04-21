@@ -138,7 +138,7 @@
             <artifactId>plugin-rdbms-util</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <!-- datax依赖 -->
+        <!-- 数据库依赖 -->
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc6</artifactId>

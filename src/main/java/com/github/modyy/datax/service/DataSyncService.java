@@ -1,4 +1,4 @@
-package com.modyy.datax.service;
+package com.github.modyy.datax.service;
 
 public interface DataSyncService {
     void execute(String jobConfig);

@@ -20,8 +20,9 @@
 *
 ******************************************************************************/
 
-package com.modyy.kettle.server;
+package com.github.modyy.kettle.server;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.RandomStringUtils;
 import org.pentaho.di.core.Const;
 import org.pentaho.di.core.KettleEnvironment;
@@ -38,6 +39,7 @@ import org.pentaho.di.repository.RepositoryDirectoryInterface;
 import org.pentaho.di.repository.RepositoryMeta;
 import org.pentaho.di.trans.Trans;
 import org.pentaho.di.trans.TransMeta;
+import org.springframework.stereotype.Component;
 
 /**
  * This class demonstrates how to load and execute a PDI transformation.
@@ -45,6 +47,8 @@ import org.pentaho.di.trans.TransMeta;
  * as well as setting parameters prior to execution, and evaluating
  * the result.
  */
+@Slf4j
+@Component
 public class TranServer {
 
   public static TranServer instance;

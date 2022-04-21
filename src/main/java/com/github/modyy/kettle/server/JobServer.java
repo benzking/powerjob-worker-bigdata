@@ -1,6 +1,7 @@
 
-package com.modyy.kettle.server;
+package com.github.modyy.kettle.server;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.RandomStringUtils;
 import org.pentaho.di.core.Const;
 import org.pentaho.di.core.KettleEnvironment;
@@ -17,12 +18,15 @@ import org.pentaho.di.repository.RepositoriesMeta;
 import org.pentaho.di.repository.Repository;
 import org.pentaho.di.repository.RepositoryDirectoryInterface;
 import org.pentaho.di.repository.RepositoryMeta;
+import org.springframework.stereotype.Component;
 
 /**
  * This class demonstrates how to load and execute a PDI job. It covers loading
  * from both file system and repositories, as well as setting parameters prior
  * to execution, evaluating the job result, and retrieving the job's log lines.
  */
+@Slf4j
+@Component
 public class JobServer {
 
     public static JobServer instance;

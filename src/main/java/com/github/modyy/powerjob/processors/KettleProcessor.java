@@ -1,6 +1,9 @@
-package com.modyy.powerjob.processors;
+package com.github.modyy.powerjob.processors;
 
+import com.github.modyy.kettle.server.JobServer;
+import com.github.modyy.kettle.server.TranServer;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import tech.powerjob.worker.core.processor.ProcessResult;
 import tech.powerjob.worker.core.processor.TaskContext;
@@ -15,13 +18,18 @@ import java.util.Collections;
 @Slf4j
 @Component
 public class KettleProcessor implements BasicProcessor {
-
+    @Autowired
+    private JobServer JobServer;
+    @Autowired
+    private TranServer  TranServer;
     @Override
     public ProcessResult process(TaskContext context) throws Exception {
 
         OmsLogger omsLogger = context.getOmsLogger();
         omsLogger.info("StandaloneProcessorDemo start process,context is {}.", context);
         omsLogger.info("Notice! If you want this job process failed, your jobParams need to be 'failed'");
+
+
 
         omsLogger.info("Let's test the exception~");
         // 测试异常日志
